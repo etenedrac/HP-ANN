@@ -18,6 +18,7 @@ void setValueNeuron(Neuron* neuron, double value){
     neuron->val = value;
 }
 
-void activateNeuron(Neuron* neuron, double (*f)(double x)){
-    neuron->actVal = f(neuron->val);
+void activateNeuron(Neuron* neuron, int (*f)(double x, double* y, void* prm), void* prm){
+    if(f(neuron->val, &(neuron->actVal), prm)){
+    }
 }

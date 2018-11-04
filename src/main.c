@@ -10,7 +10,7 @@ int main(int argc, char** argv){
     
     printf("The value of the neuron is: %f\n", (n->val));
     
-    activateNeuron(n, ActivationLogistic);
+    activateNeuron(n, ActivationLogistic, NULL);
     printf("The activation value of the neuron is: %f\n", (n->actVal));
 
 

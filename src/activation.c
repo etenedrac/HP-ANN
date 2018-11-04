@@ -1,10 +1,13 @@
 #include "headers/activation.h"
 #include <math.h>
 
-double ActivationLogistic(double x){
-    return 1./(1.+exp(-x));
+int ActivationLogistic(double x, double* y, void* prm){
+    *y = 1./(1.+exp(-x));
+    return 1;
 }
 
-double DerivativeLogistic(double x){
-    return ActivationLogistic(x)*(1.-ActivationLogistic(x));
+int DerivativeLogistic(double x, double* y, void* prm){
+    ActivationLogistic(x, y, prm);
+    *y = (*y)*(1.-(*y));
+    return 1;
 }

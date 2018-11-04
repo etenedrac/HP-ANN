@@ -29,8 +29,9 @@ void setValueNeuron(Neuron* neuron, double value);
 
 /**
  * Function to set an activation value given an activation function
- * @param 
+ * @param Neuron* neuron: the neuron we want to activate
+ * @param double (*f)(double x): the activation function we will use
  */
-void activateNeuron(Neuron* neuron, double (*f)(double x));
+void activateNeuron(Neuron* neuron, int (*f)(double x, double* y, void* prm), void* prm);
 
 #endif
