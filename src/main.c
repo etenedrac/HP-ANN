@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "headers/neuron.h"
-#include "headers/activation.h"
+#include "../include/neuron.h"
+#include "../include/activation.h"
 
 int main(int argc, char** argv){
 

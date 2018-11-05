@@ -1,4 +1,4 @@
-#include "headers/neuron.h"
+#include "../include/neuron.h"
 #include <stdlib.h>
 
 Neuron* createNeuron(double value, double actVal){

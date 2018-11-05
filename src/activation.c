@@ -1,4 +1,4 @@
-#include "headers/activation.h"
+#include "../include/activation.h"
 #include <math.h>
 
 int ActivationLogistic(double x, double* y, void* prm){
