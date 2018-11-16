@@ -1,0 +1,102 @@
+\hypertarget{neuron_8h}{}\section{/home/albert/\+Desktop/\+D\+E\+V/\+H\+P-\/\+A\+N\+N/include/neuron.h File Reference}
+\label{neuron_8h}\index{/home/albert/\+Desktop/\+D\+E\+V/\+H\+P-\/\+A\+N\+N/include/neuron.\+h@{/home/albert/\+Desktop/\+D\+E\+V/\+H\+P-\/\+A\+N\+N/include/neuron.\+h}}
+
+
+This header file contains the structure of the \hyperlink{structNeuron}{Neuron} and its basic functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{neuron_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structNeuron}{Neuron}
+\begin{DoxyCompactList}\small\item\em The basic structure of a \hyperlink{structNeuron}{Neuron}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structNeuron}{Neuron} $\ast$ \hyperlink{neuron_8h_a43a7f8eaba97fda5a0b17535c4b44a20}{create\+Neuron} (double value, double act\+Val)
+\item 
+void \hyperlink{neuron_8h_ad2eb23bf0a3e63a9261ba553150a2550}{free\+Neuron} (\hyperlink{structNeuron}{Neuron} $\ast$neuron)
+\begin{DoxyCompactList}\small\item\em Function to destroy a given neuron. \end{DoxyCompactList}\item 
+void \hyperlink{neuron_8h_a5d3c7fe3b5184be5af72e1ac30f1938a}{set\+Value\+Neuron} (\hyperlink{structNeuron}{Neuron} $\ast$neuron, double value)
+\begin{DoxyCompactList}\small\item\em Function to set a new value to a given \hyperlink{structNeuron}{Neuron}. \end{DoxyCompactList}\item 
+void \hyperlink{neuron_8h_af67de49f3e4ac24bff9085106ee8599c}{activate\+Neuron} (\hyperlink{structNeuron}{Neuron} $\ast$neuron, int($\ast$f)(double x, double $\ast$y, void $\ast$prm), void $\ast$prm)
+\begin{DoxyCompactList}\small\item\em Function to set an activation value given an activation function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This header file contains the structure of the \hyperlink{structNeuron}{Neuron} and its basic functions. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{neuron_8h_af67de49f3e4ac24bff9085106ee8599c}\label{neuron_8h_af67de49f3e4ac24bff9085106ee8599c}} 
+\index{neuron.\+h@{neuron.\+h}!activate\+Neuron@{activate\+Neuron}}
+\index{activate\+Neuron@{activate\+Neuron}!neuron.\+h@{neuron.\+h}}
+\subsubsection{\texorpdfstring{activate\+Neuron()}{activateNeuron()}}
+{\footnotesize\ttfamily void activate\+Neuron (\begin{DoxyParamCaption}\item[{\hyperlink{structNeuron}{Neuron} $\ast$}]{neuron,  }\item[{int($\ast$)(double x, double $\ast$y, void $\ast$prm)}]{f,  }\item[{void $\ast$}]{prm }\end{DoxyParamCaption})}
+
+
+
+Function to set an activation value given an activation function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em neuron} & The neuron we want to activate. \\
+\hline
+{\em f} & The activation function we will use. \\
+\hline
+{\em prm} & Parameters that might have the activation function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{neuron_8h_a43a7f8eaba97fda5a0b17535c4b44a20}\label{neuron_8h_a43a7f8eaba97fda5a0b17535c4b44a20}} 
+\index{neuron.\+h@{neuron.\+h}!create\+Neuron@{create\+Neuron}}
+\index{create\+Neuron@{create\+Neuron}!neuron.\+h@{neuron.\+h}}
+\subsubsection{\texorpdfstring{create\+Neuron()}{createNeuron()}}
+{\footnotesize\ttfamily \hyperlink{structNeuron}{Neuron}$\ast$ create\+Neuron (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{double}]{act\+Val }\end{DoxyParamCaption})}
+
+Function to create a new neuron. It allocates The necessary memory to create a neuron. 
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to be stored by the neuron. \\
+\hline
+{\em act\+Val} & The activation value to be stored by the neuron. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{neuron_8h_ad2eb23bf0a3e63a9261ba553150a2550}\label{neuron_8h_ad2eb23bf0a3e63a9261ba553150a2550}} 
+\index{neuron.\+h@{neuron.\+h}!free\+Neuron@{free\+Neuron}}
+\index{free\+Neuron@{free\+Neuron}!neuron.\+h@{neuron.\+h}}
+\subsubsection{\texorpdfstring{free\+Neuron()}{freeNeuron()}}
+{\footnotesize\ttfamily void free\+Neuron (\begin{DoxyParamCaption}\item[{\hyperlink{structNeuron}{Neuron} $\ast$}]{neuron }\end{DoxyParamCaption})}
+
+
+
+Function to destroy a given neuron. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em neuron} & The neuron to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{neuron_8h_a5d3c7fe3b5184be5af72e1ac30f1938a}\label{neuron_8h_a5d3c7fe3b5184be5af72e1ac30f1938a}} 
+\index{neuron.\+h@{neuron.\+h}!set\+Value\+Neuron@{set\+Value\+Neuron}}
+\index{set\+Value\+Neuron@{set\+Value\+Neuron}!neuron.\+h@{neuron.\+h}}
+\subsubsection{\texorpdfstring{set\+Value\+Neuron()}{setValueNeuron()}}
+{\footnotesize\ttfamily void set\+Value\+Neuron (\begin{DoxyParamCaption}\item[{\hyperlink{structNeuron}{Neuron} $\ast$}]{neuron,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Function to set a new value to a given \hyperlink{structNeuron}{Neuron}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em neuron} & The neuron which will have a new value. \\
+\hline
+{\em value} & The new value of the neuron. \\
+\hline
+\end{DoxyParams}

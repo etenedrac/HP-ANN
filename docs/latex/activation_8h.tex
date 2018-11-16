@@ -1,0 +1,84 @@
+\hypertarget{activation_8h}{}\section{/home/albert/\+Desktop/\+D\+E\+V/\+H\+P-\/\+A\+N\+N/include/activation.h File Reference}
+\label{activation_8h}\index{/home/albert/\+Desktop/\+D\+E\+V/\+H\+P-\/\+A\+N\+N/include/activation.\+h@{/home/albert/\+Desktop/\+D\+E\+V/\+H\+P-\/\+A\+N\+N/include/activation.\+h}}
+
+
+This header file contains all the implemented activation functions and its derivatives.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{activation_8h_ad2f32904e749841eda6b19a5bdc368e2}{Activation\+Logistic} (double x, double $\ast$y, void $\ast$prm)
+\begin{DoxyCompactList}\small\item\em Logistic function. \end{DoxyCompactList}\item 
+int \hyperlink{activation_8h_a68efe10566ce071243c9031d0a74ec29}{Derivative\+Logistic} (double x, double $\ast$y, void $\ast$prm)
+\begin{DoxyCompactList}\small\item\em Derivative of Logistic function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This header file contains all the implemented activation functions and its derivatives. 
+
+In order to difference both tyes of functions, we have set the following nomenclature\+:
+\begin{DoxyItemize}
+\item Activation\$\+F\+U\+NC\+: implementation of the activation function F\+U\+NC.
+\item Derivative\$\+F\+U\+NC\+: implementation of the derivative of the activation function F\+U\+NC.
+\end{DoxyItemize}
+
+All the functions will have 3 main parameters\+:
+\begin{DoxyItemize}
+\item x\+: the input value
+\item y\+: the output value
+\item (void$\ast$) prm\+: an array of parameters
+\end{DoxyItemize}
+
+The output of the functions will be 1 if no error has happened.
+
+Up to now, the implemented activation functions are\+:
+\begin{DoxyItemize}
+\item Logistic 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{activation_8h_ad2f32904e749841eda6b19a5bdc368e2}\label{activation_8h_ad2f32904e749841eda6b19a5bdc368e2}} 
+\index{activation.\+h@{activation.\+h}!Activation\+Logistic@{Activation\+Logistic}}
+\index{Activation\+Logistic@{Activation\+Logistic}!activation.\+h@{activation.\+h}}
+\subsubsection{\texorpdfstring{Activation\+Logistic()}{ActivationLogistic()}}
+{\footnotesize\ttfamily int Activation\+Logistic (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double $\ast$}]{y,  }\item[{void $\ast$}]{prm }\end{DoxyParamCaption})}
+
+
+
+Logistic function. 
+
+The logistic function is defined as\+: \[ f(x) = \frac{1}{1-e^{-x}}. \] 
+\begin{DoxyParams}{Parameters}
+{\em x} & Input value. \\
+\hline
+{\em y} & Pointer to the output value of the function. \\
+\hline
+{\em prm} & Pointer to parameters. Insert N\+U\+LL pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if nothing wrong happenes, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{activation_8h_a68efe10566ce071243c9031d0a74ec29}\label{activation_8h_a68efe10566ce071243c9031d0a74ec29}} 
+\index{activation.\+h@{activation.\+h}!Derivative\+Logistic@{Derivative\+Logistic}}
+\index{Derivative\+Logistic@{Derivative\+Logistic}!activation.\+h@{activation.\+h}}
+\subsubsection{\texorpdfstring{Derivative\+Logistic()}{DerivativeLogistic()}}
+{\footnotesize\ttfamily int Derivative\+Logistic (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double $\ast$}]{y,  }\item[{void $\ast$}]{prm }\end{DoxyParamCaption})}
+
+
+
+Derivative of Logistic function. 
+
+Given the logistic function $f(x)$, its derivative is computed as $f'(x)=f(x)(1-f(x))$. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Input value. \\
+\hline
+{\em y} & Pointer to the output value of the function. \\
+\hline
+{\em prm} & Pointer to parameters. Insert N\+U\+LL pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if Nothing wrong happenes, 0 otherwise. 
+\end{DoxyReturn}
